@@ -1,10 +1,31 @@
 body,
 html
 * {
-    font-size: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 15;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(245, 132, 211);
+}
+
+.container{
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
@@ -12,6 +33,13 @@ html
     width: 30rem;
     border: 2px solid black;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("img/pinkbackground.jpg");
+    background-size: cover;
+    margin-bottom: 50px;
 }
 
 .card-img{
@@ -21,5 +49,9 @@ html
 }
 
 .card-header{
-    
+    margin-top: 1.2rem;
+}
+
+.card-price{
+    margin-bottom: 1.2rem;
 }
