@@ -29,11 +29,12 @@ body{
     color: rgb(245, 132, 211);
     font-family: "Concert One", sans-serif;
     text-shadow: 4px 4px lightblue;
+    justify-content: space-around;
 }
 
 .container{
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +43,8 @@ body{
 
 .card{
     height: 40rem;
-    width: 31%;
-    min-width: 500px;
+    width: 29%;
+    min-width: 400px;
     border: 2px solid rgb(203, 226, 173);
     border-radius: 80px;
     border-width: 10px;
