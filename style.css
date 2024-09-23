@@ -34,7 +34,7 @@ body{
 
 .container{
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
