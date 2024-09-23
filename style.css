@@ -30,11 +30,13 @@ body{
     font-family: "Concert One", sans-serif;
     text-shadow: 4px 4px lightblue;
     justify-content: space-around;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .container{
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +45,7 @@ body{
 
 .card{
     height: 40rem;
-    width: 29%;
+    width: 22%;
     min-width: 400px;
     border: 2px solid rgb(203, 226, 173);
     border-radius: 80px;
@@ -56,6 +58,9 @@ body{
     background-size: cover;
     margin-bottom: 50px;
     box-shadow: 10px 10px lightblue;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline-offset: 0.2rem;
 }
 
 .card-img{
@@ -70,4 +75,11 @@ body{
 
 .card-price{
     margin-bottom: 1.2rem;
+}
+.title:hover{
+    transform: scale(1.1);
+}
+.card:hover{
+    transform: scale(1.05);
+    outline: 0.5rem solid #77b7ff
 }
