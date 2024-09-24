@@ -10,14 +10,16 @@ h2{
     font-size: 30px;
     text-shadow: 1px 1px rgb(221, 107, 107);
     font-family: "Signika Negative", sans-serif;
-    color:rgb(228, 128, 128)
+    color:rgb(228, 128, 128);
+    transition: color 0.3s;
 }
 
 h3{
     font-size: 25px;
     font-family: "Comfortaa", sans-serif;
     color: rgb(187, 146, 240);
-    transition: color 0.1s;
+    transition: color 0.3s, transform 0.3s;
+    display: inlline-block; /*inline element allows for it to be separated and allows for rotation to occur*/
 }
 
 body{
@@ -32,7 +34,7 @@ body{
     text-shadow: 4px 4px lightblue;
     justify-content: space-around;
     -webkit-transition: all 0.3s;
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
 
 .container{
@@ -60,9 +62,9 @@ body{
     background-size: cover;
     margin-bottom: 50px;
     box-shadow: 10px 10px lightblue;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     outline-offset: 0.2rem;
+    animation: fadeIn 1.0s ease-in-out forwards /*fadein animation is added*/
 }
 
 .card-img{
@@ -72,15 +74,81 @@ body{
     transition: transform 0.3s;
 }
 
+.card:nth-child(1){
+    animation-delay: 0.5s; /*first card fades in immediately*/
+}
+
+.card:nth-child(2){
+    animation-delay: 1.0s;
+}
+
+.card:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+.card:nth-child(4){
+    animation-delay: 2.0s;
+}
+
+.card:nth-child(5){
+    animation-delay: 2.5s;
+}
+
+.card:nth-child(6){
+    animation-delay: 3.0s;
+}
+
+.card:nth-child(7){
+    animation-delay: 3.5s;
+}
+
+.card:nth-child(8){
+    animation-delay: 4.0s;
+}
+
+.card:nth-child(9){
+    animation-delay: 4.5s;
+}
+
+.card:nth-child(10){
+    animation-delay: 5.0s;
+}
+
+.card:nth-child(11){
+    animation-delay: 5.5s;
+}
+
+.card:nth-child(12){
+    animation-delay: 6.0s;
+}
+
+.card:nth-child(13){
+    animation-delay: 6.5s;
+}
+
+.card:nth-child(14){
+    animation-delay: 7.0s;
+}
+
+.card:nth-child(15){
+    animation-delay: 7.5s;
+}
+
+.card:nth-child(16){
+    animation-delay: 8s;
+}
+
 h2:hover{
-    animation: pulse 0.5s infinite alternate;
+    color:#454ea1; /*first hover effect*/
 }
 
 h3:hover{
-    color:#454ea1
+    color: rgb(81, 55, 133);
+    transform: rotate(10deg); /*second hover effect*/
 }
+
 .card-img:hover{
-    transform: scale(1.1);
+    transform: scale(0.9); /*third hover effect*/
 }
 .card-header{
     margin-top: 1.2rem;
@@ -90,11 +158,12 @@ h3:hover{
     margin-bottom: 1.2rem;
 }
 .title:hover{
-    color:#454ea1
+    animation: pulse 0.5s infinite alternate;  /*fourth hover effect*/
 }
+
 .card:hover{
     transform: scale(1.05);
-    outline: 0.5rem solid #77b7ff
+    outline: 0.5rem solid #77b7ff  /*fifth hover effect*/
 }
 
 @keyframes pulse {
@@ -103,6 +172,17 @@ h3:hover{
     }
     100% {
         transform: scale(1.1);
+    }
+}
+/*ANIMATION BELOW*/
+@keyframes fadeIn{
+    from{
+        opacity: 0; /*transparent*/
+        transform: translateY(20px); /*starts below*/
+    }
+    to{
+        opacity: 1; /*ends at opaque*/
+        transform: translateY(0); /*ends at original position*/
     }
 }
 
