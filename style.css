@@ -2,6 +2,7 @@ body,
 html
 * {
     box-sizing: border-box;
+    font-size: 10px;
     margin: 0;
     padding: 0;
 }
@@ -26,8 +27,8 @@ body{
     background-image: url(img/wallpaper.jpg);
 }
 
-.title{
-    font-size: 50px;
+h1{
+    font-size: 100px;
     text-align: center;
     color: rgb(245, 132, 211);
     font-family: "Concert One", sans-serif;
@@ -157,7 +158,7 @@ h3:hover{
 .card-price{
     margin-bottom: 1.2rem;
 }
-.title:hover{
+h1:hover{
     animation: pulse 0.5s infinite alternate;  /*fourth hover effect*/
 }
 
