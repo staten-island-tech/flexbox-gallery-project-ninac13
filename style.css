@@ -73,6 +73,7 @@ h1{
     height: 80%;
     object-fit: cover;
     transition: transform 0.3s;
+    
 }
 
 .card:nth-child(1){
